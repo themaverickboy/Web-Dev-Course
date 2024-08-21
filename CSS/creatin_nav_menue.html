@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naviagtion Menue</title>
+    <style>
+        
+        *{
+            padding:0;
+            margin:0;
+        } 
+        .container{
+            height: 1000px;
+        }
+        .navbar{
+            background-color: black;
+            /* border-radius: 100px; */
+           
+        }
+        .navbar ul{
+            overflow: auto;
+
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 15px 22px;
+
+        }
+        .navbar li a {
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            padding: 4px 4px;
+        }
+        .navbar li a:hover{
+            background-color: grey;
+            border-radius: 50px;
+        }
+        .search{
+            float: right;
+            color: white;
+            margin: 12px 38px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 6px 55px;
+            width: 117px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Pricing</a></li>
+                <div class="search">
+                    <input type="text" placeholder="Search this Site">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

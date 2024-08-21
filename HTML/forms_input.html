@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input</title>
+</head>
+<body>
+    <h1>HTML FORMS</h1>
+    <form action="backend.php">
+        <div>
+            <label for="Name">Name</label>
+            <input type="text", name="MyName" id="Name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="MyRole">
+        </div>
+        <br>
+        <div>
+            Salary: <input type="number" name="MySalary">
+        </div>
+        <br>
+        <div>
+            E-Mail: <input type="email" name="MyMail">
+        </div> 
+        <br> 
+        <div>
+            Gender: Male<input type="radio" name="Mygender">Female<input type="radio" name="Mygender">
+            <!-- We will be able to select only one bcuz name are same ie Mygender -->
+        </div>
+        <br>
+        <!-- Now if u want to get a textbox -->
+         <div>
+            Write About Yourself: <br> <br> <textarea name="myText" id="" cols="90" rows="10"></textarea>
+         </div>
+         <br>
+         <div>
+            <label for="car">Car</label>
+            <select name="MyCar" id="car">
+                <option value="noCar" selected>No Car</option>  
+                <option value="rrphantom">Rolls Royce Phantom</option>
+                <option value="rrghost">Rolls Royce Ghost</option>
+                <option value="rrcullinan">Rolls Royce Cullinan</option>
+                <option value="rrspectre">Rolls Royce Spectre</option>
+                <option value="rrboattail">Rolls Royce Boat Tail</option>
+            </select>
+         </div> <br>
+         <div>
+            <input type="checkbox" name="Mycheck">I Accept Terms and Policy <br><br>
+            <!-- Lets say if u wanna by default keep a checkbox checked -->
+             <input type="checkbox" name="Mycheck2" checked>I will take this Job
+        </div>
+        <br>
+        <input type="submit" value="submit">
+        <!-- RESET!! -->
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

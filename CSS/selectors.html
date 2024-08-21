@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Selector</title>
+        <style>
+            h3{
+    color: red;
+}
+/* this is element selector */
+/* this means that we r directly selecting the element h3 */
+#hey{
+    color: blue;
+}
+/* this is id selector */
+/* this means we r selecting elements with id hey */
+
+.greenElement{
+    color: green;
+}
+/* this is class selector */
+/* this means we r selecting all elements with this class */
+
+footer, header{
+    color: brown;
+}
+/* this is group selector */
+/* it means that footer and header element will get its change */
+        </style>
+    </head>
+    <body>
+        <h3>Selectors in CSS</h3>
+        <p>Hey, Welcome</p>
+        <p id="hey">Hey, Welcome to my channel</p>
+        <p>Hey, Welcome to my website and be here</p>
+        <!-- suppose u want only one para to be colored -->
+        <!-- so use id selector..above used in Element selector -->
+<!-- but if u wanna do it for class..use . -->
+        <p id="heylo" class="greenElement">
+            Heyloo guyzz
+        </p>
+        <p id="yooo" class="greenElement">
+            Heyloo
+        </p>
+        <h4 id="hey">
+            Whoohoo
+        </h4>
+        <div>
+        <footer>Hey its a footer</footer>
+        </div>
+        <footer>footer 2nd guyzz</footer>
+        <header>
+            This is a geader
+        </header>
+
+    </body>
+</html>

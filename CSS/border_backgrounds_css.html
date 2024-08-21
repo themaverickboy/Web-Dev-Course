@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border and Backgrounds in CSS</title>
+    <link rel="import" href="component.html">
+    <style>
+        #first_para{
+            background-color: aqua;
+            height: 100px;
+            width:100px;
+            border-width:4px;
+            border-color:black;
+            border-style: solid;
+            border-radius: 15px;
+        }
+        #second_para{
+            background-color: rgb(23, 206, 23);
+            height: 100px;
+            width:100px;
+            border-width:4px;
+            border-top: 10px solid blue;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        #third_para{
+            height:300px;
+            font-weight: 900;
+            width:1000px;
+            background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDw8NDQ0NFREWFhURFRMYHTQhGBolJxUVIjgtJSkrMjo1FyA/ODM4OyguLiwBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAbAAADAQEBAQEAAAAAAAAAAAABAgMABAUGB//EADgQAAMAAQIDBQYEBQMFAAAAAAABAgMEERIhMQUTQVGBIjNhcaHwFCMykQZScrHBQoLCFWKS0eH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+rUfmP0PX0eLc82V+Y/Q9zs6OgHTGAp3R144KPGB57xivGd1YyVYwORwK8Z01AjQHO4FcF2hWgIOBXBZoVoCLgVwWaFaAg4A4LNCtARcCOC7QrQEHArku0I0BFyByVaFaAi5FclmgNAQciuS2wGgI8IvCWaFaAk5F4SuwGgJcIOErsK0BPhA5KbA2AnwiuSuwAJcJuEo0BID0J94/Q9/s1dDwZ94/Q9/s7ogPYxIrwk8RYCVSTqToaEqQOWpJVB1VJOkByVIlI6aklSA52hWWqSbQE2Kx2hWgEYrGYrARisdisBGKx2KwEYrGYrAVisZisBWKx2KwFYrGYrAVgYzFAUA2wAF2FY4rAVgGA0ApggA9CfeP0PoOzuiPAn3j9D3+zgPYxFSWIqBgMJgJUiVItSJ0gI0iVIuydICFInSLUhKQHPSEaLUibQE2hGUaEYCMRjtCsBRGMKwEYGFgYCMVjMVgAVgq0ufnXCvj5/5/Yzbfw+HVgBisZgYCsAWAACsZisAAYTAKwBYAAAIAPRn3j9D3uz+h4M+8foe92f0A9jEVI4iwGMYwC0ToqydICVE6RWibAjSEaK0ibAlSJtFqRKgJMnRViNASaEZRiMBGIx2IwEYlLf76DsSmBJVtun1W23k03yf35BulKbfJJNt+SRPUNJw34Ukn58XstfXf0BkpXShPdLara6bb8p9dv2T8wF08vhmqW1cK5PrO/VfPzHVb/Pdr5LfYXVZljlvq+GmkuraW+yIYbaSiGqtJcdf6I5dfm+u3x9QOhvwAaVt4t+be3NmYAYAsUDMDCwAAAQAKzBYAAAIAPRn3j9D3ez+h4U+8foe5oOgHsYixDEXQGMYwGJ0UEoCVE2VonQEqJsrROgJ0TpFGJQEaEopQlASZNlKEoCbEodiWtwOe6bvhXJqU2/JNv8Ad+z9P3PyJKm8tS9k+7h7/wA8qq328uq/f1Kt+mwHDq8iUZLvlOJVUU+nFPNt+W2237+ZbTy+Hia2q27pPk1v0T+SSXoc2prfTTjfJ5MeHHXhw945j/k/2OlZN0m+tvZL/wCfuBwa5u3y2b73HjhPxvjTfolLb+G3kduHCscqZ+LbfOqp9ab8WzztGnS0zf6Z2S83keOnden6f/I7c2ZKpnn8dure3Kf7v0AplyKV8eSS8W30X35CpPxfov8ALI4p4rrLe3s+xH8spdX89916fvfi3+Xn5gYBjAAxgAYBjABgCxQMAIAPRn3j9D29B0PEn3j9D2tAwPYxMujmxHRIDGMYDCUOJQCMnRRk6AnROirJUBOidFaJ0BKidFaJsCVCUUonQE6J0UoSgOPV4nyuPeY93KW+1J/qhr4/3Sfgcur1E1MSt+HKquls0+7nbilrwbdTLT5834no0eVr8fBlw5V+h5Zm+fKXfsp/JvgfzmfNgHWYarT5d2lla71PwnJG1QvknM/XzOfS53kU8L9rUROeLXNY8Fribl+e72/3S+nJduore4xLq2slfDHLT+r4V6vyPH0NRp9HOou1LneZdJ7PGrcY8CS3fPlslu3T3Se+wHZWWcOLG/DHnrHEynTa47iZSXNvb+xCMmSuOkknxVixu+fHkq9qycKfOeS6tcoZLBpbzX3mbjx03dYtPxbfhcdvnV8L2rK+a67Jbpb+067MCVZnMpTj08RESlydtNbr+lez60B04sMwkkt+HxrnXxe/mOZsCrfo0/j/AIAIDAAxjAAxjAYAAwgYAMYyA9GfeP0PY0LPGn3j9D19EwPYws6JZyYWdMsCqCKg7gFiUMxaARiUOxGBNk6KMnQE2JQ7EoCVE2VomwJsmylCMCVE6K0ToCNHB2rhrJgyzHD3nA6x8S3jvZ9qOJeK3SO+iFsDwf8AqE6bR1rEry4q0/4ibaby/o3nHc9f+1eW/Pxp8nZ2nt3h0/Ko7N0+HC8t7Vvrax/mUp8bUudn0/Ovrtscn8W5np8VafFHEs+q0WXBhlqOOnqY73FPwb4W/jmZ7nZGneHF3dtVkVVWW1vteW/buufm6bA68ONQtk2226qqe9VT6ts8rs7Ldz3uON8V5M7V3nrH3kVmq4uZlNcPDXLo3v6h7Vz97c6OPa49q1CTW6wb/o/37Nf08T8t/Sx49tt9t+b5btJvy8kAIwy+dJ2/F2216JvkiwDAEBjAYxgbgZgMYDAMwAYxgAd6/W/Q9bRs8ZP8x+h6ujoD2cTOmWcOGjqhgdCY25JMZMB9wMG4GwAxaGYjAVkqKMSgJsSh2JQEqJsrRKgJ0JQ9CUAlE6RShaA5rOXM9jtyI8/XUoi8lbqISdUk3wrz2QHy/wDGtLudPkfD+T2hocvE9t8a7+VxLf57ep05tZTyVp8N753TrJVc40+JJSrqVydPbaU+uzfSWeN/GHaGDLosnct5csZNPkxzOPI79nUY3W3LyT/Y6Ox+08CjJV05yZdTq8lcWPIqqFlpY2+X8k49vkgPe0OljBLmOJuqd5MlviyZcj63deL5JfBJJbJJHUmcei1MZZd43xSm5b2qdn8mtzpVAUTDuImFMBtzbi7mAJgG3AIDAAwDGAxgGA6Ff5j9D09JZx6f+HstU6dPd/A9XTdgUutfRAdmCzsijnxdj7eP0R0x2al4/RAVljJiLQrz+iG/Brz+iAbc24v4SftI34RfaQBbFYXo19pCvRr7SAVsRsZ6RfaROtGvtIBaYjY1aRfaRN6RfaQCUybY9aRfaROtIvtIBGxGxq0i+0ib0q+0gA2KwvTL7SFemXn9EAlsXTvlk+eP/kNWjl/6vogY8CxK/a34uHp8N/8A2BnT82K6fmwOvvZiu0BHX1+Vk/oZ4MZT29c+LDkSTbcUkknu+R4GPRV/LS+aA6pylZyHPOhryf7FFo2BZWFUTWkYVpWBTc24v4b72N+HAbcG4vcG7gBtwC9yDuQH3MmT7kPcgfp0wl4DgTNxIAmF4wOwHMSeQDyAWBxEHkFeQC7tCOyDsV2BarEdEnYjoCrom6EdCugGbJtmbEbA1MmwsUBWIx2KwJ0hHJRgAi5Ecl2hWgIOBHjOlyK5A5njF7s6XIrkDn4AOC7kHCBzuAOC7kHCBDgFcF+EDkCDkDkvwg4QIOQcJZyDhA+6dA4zGAHEDjAYAOgcQTAK6FdGMAGxWzGADYrZjAK2BsBgA2KzGAUDMYBGBmMAoGAwAAYwAaAYwCtA2MYBWgbGMAGgOTGAXYDRjAK0DhMYAcIOExgP/9k=);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            border:10px solid blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>Height, Widht, Border & Background</h3>
+    <p id="first_para">This is a paragraph</p>
+    <p id="second_para">This is a paragraph</p>
+    <p id="third_para">This is a paragraph</p>
+</body>
+</html>
